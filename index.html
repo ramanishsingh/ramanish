@@ -3,29 +3,61 @@
 <head>
     <title>Ramanish Singh</title>
     <style>
-        /* Add CSS styles directly within this <style> block */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+        /* Reset some default styles for consistency */
+        body, h1, p {
             margin: 0;
             padding: 0;
         }
 
+        /* Base styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
         header {
             text-align: center;
-            padding: 20px;
+            padding: 50px;
+            background-color: #333;
+            color: #fff;
         }
 
         .profile-image {
-            max-width: 300px; /* Adjust the maximum width as needed */
+            max-width: 300px;
             height: auto;
-            border-radius: 5px;
+            border-radius: 50%;
         }
 
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+
+        /* Animation for the header */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Navigation styles */
         nav {
+            text-align: center;
             background-color: #333;
             color: #fff;
-            text-align: center;
+            padding: 10px 0;
         }
 
         nav ul {
@@ -38,9 +70,23 @@
             margin-right: 20px;
         }
 
+        /* Footer styles */
         footer {
             text-align: center;
-            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        /* Hover effect for navigation links */
+        nav a, nav a:visited {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff9900; /* Change the color on hover */
         }
     </style>
 </head>
@@ -48,10 +94,9 @@
     <!-- Header Section -->
     <header>
         <h1>Ramanish Singh</h1>
+        <img src="ram.jpg" alt="Your Photo" class="profile-image">
         <p>Hi! Welcome to my homepage. I am a computational chemistry Ph.D. student in the Chemical Engineering department at the University of Minnesota - Twin Cities.
         I also have a M.S. in Data Science from the same university. Prior to that, I completed my B.Tech and M.Tech from the prestigious Indian Institute of Technology Kanpur.</p>
-        <!-- Resize your image using CSS -->
-        <img src="ram.jpg" alt="Your Photo" class="profile-image">
     </header>
 
     <!-- Navigation Section -->
